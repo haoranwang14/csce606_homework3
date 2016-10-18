@@ -44,7 +44,7 @@ class MoviesController < ApplicationController
     end
     
     @movies = Movie.sorting(@sort)
-    #@movies = @movies.rating(@ratings_filter)
+    @movies = @movies.rating(@ratings_filter)
   end
 
   def new
